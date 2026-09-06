@@ -69,12 +69,13 @@ export const siteConfig = {
   },
 
   liveChannels: [
-    { id: "arena", icon: "◉", name: "Arena Nord", category: "Sport", url: "https://example.com/demo/arena-nord" },
-    { id: "stage", icon: "✦", name: "Stage One", category: "Muzică", url: "https://example.com/demo/stage-one" },
-    { id: "field", icon: "△", name: "Field Report", category: "Documentar", url: "https://example.com/demo/field-report" },
-    { id: "motion", icon: "↗", name: "Motion Lab", category: "Cultură", url: "https://example.com/demo/motion-lab" },
-    { id: "coast", icon: "≈", name: "Coastline", category: "Relaxare", url: "https://example.com/demo/coastline" },
-    { id: "signal", icon: "⌁", name: "Signal 06", category: "Tehnologie", url: "https://example.com/demo/signal-06" }
+    { id: "arena", icon: "◉", name: "Streamed", category: "Sport", url: "https://streamed.pk/" },
+    { id: "stage", icon: "✦", name: "BuffStreams", category: "Muzică", url: "https://buffsports.io/watch-soccer" },
+    { id: "field", icon: "△", name: "Streamest", category: "Documentar", url: "https://v2.streameast.ga/soccer-streams/" },
+    { id: "motion", icon: "↗", name: "SuperStrim", category: "Cultură", url: "https://superstrim.pages.dev/sports/football" },
+    { id: "coast", icon: "≈", name: "StreamSport99", category: "Relaxare", url: "https://streamsports99.website/" },
+    { id: "signal", icon: "⌁", name: "RosieStream", category: "Tehnologie", url: "https://roxiestreams.info/" }
+    { id: "signal", icon: "⌁", name: "Fantastic Soda", category: "Tehnologie", url: "https://fantasticsoda.com/#/live" }
   ],
 
   alwaysOnChannels: [
