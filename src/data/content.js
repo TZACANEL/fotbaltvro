@@ -57,14 +57,14 @@ export const siteConfig = {
     title: "Recomandate",
     intro: "",
     displayedSourceCount: 7,
-    sourceCountLabel: "surse disponibile",
+    sourceCountLabel: "surse",
     emptyMessage: "Momentan nu sunt surse de afișat. Revino puțin mai târziu."
   },
 
   alwaysOnSection: {
     title: "Alte surse",
     intro: "",
-    sourceCountLabel: "surse disponibile",
+    sourceCountLabel: "surse",
     emptyMessage: "Momentan nu sunt alte surse configurate."
   },
 
