@@ -4,7 +4,7 @@ function Header({ site }) {
   return (
     <header className="site-header">
       <div className="header-inner">
-        <a className="brand" href="#top" aria-label={`${site.title} - începutul paginii`}>
+        <a className="brand" href={site.homeUrl} aria-label={`${site.title} - ${site.homeAriaLabelSuffix}`}>
           <img className="brand-logo" src={logo} alt="" />
           <span>{site.title}</span>
         </a>

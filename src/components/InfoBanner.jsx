@@ -1,6 +1,6 @@
-function InfoBanner({ banners }) {
+function InfoBanner({ banners, label }) {
   if (!banners?.length) return null;
-  return <section className="info-grid" aria-label="Informații generale">
+  return <section className="info-grid" aria-label={label}>
     {banners.map((banner) => <article className="info-banner" key={banner.id}>
       <p className="eyebrow">{banner.eyebrow}</p><h2>{banner.title}</h2>
       {banner.links?.length ? <nav className="source-links" aria-label={banner.title}>

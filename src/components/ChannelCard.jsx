@@ -1,11 +1,9 @@
-const isValidUrl = (url) => {
-  try { return ["http:", "https:"].includes(new URL(url).protocol); } catch { return false; }
-};
+import { isValidUrl } from "../utils/url";
 
 function ChannelCard({ channel, buttonLabel, invalidUrlLabel, labels }) {
   const enabled = isValidUrl(channel.url);
-  const category = channel.category || labels.category;
-  const name = channel.name || labels.channelName;
+  const category = channel.category || labels.fallbackCategory;
+  const name = channel.name || labels.fallbackChannelName;
 
   return <article className="channel-card">
     {enabled ? <a className="channel-button" href={channel.url} target="_blank" rel="noopener noreferrer" aria-label={`${buttonLabel}: ${name}, ${category}`}>

@@ -1,10 +1,7 @@
-import ChannelCard from "./ChannelCard";
+import ChannelSection from "./ChannelSection";
 
 function AlwaysOnSection({ config, channels = [], buttons, labels }) {
-  return <section className="content-section content-section--always" aria-labelledby="always-heading">
-    <div className="section-heading"><div><h2 id="always-heading">{config.title}</h2>{config.intro && <p>{config.intro}</p>}</div><span className="channel-count" aria-label={`${channels.length} ${config.sourceCountLabel}`}>{channels.length} {config.sourceCountLabel}</span></div>
-    {channels.length ? <div className="channel-grid channel-grid--always">{channels.map((channel) => <ChannelCard key={channel.id} channel={channel} buttonLabel={buttons.sourceLabel} invalidUrlLabel={buttons.invalidUrlLabel} labels={labels} />)}</div> : <p className="empty-state">{config.emptyMessage}</p>}
-  </section>;
+  return <ChannelSection config={config} channels={channels} buttons={buttons} labels={labels} id="always" headingLevel="h2" sectionClassName="content-section--always" gridClassName="channel-grid--always" />;
 }
 
 export default AlwaysOnSection;

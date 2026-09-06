@@ -1,6 +1,4 @@
-const isValidUrl = (url) => {
-  try { return ["http:", "https:"].includes(new URL(url).protocol); } catch { return false; }
-};
+import { isValidUrl } from "../utils/url";
 
 function ResourceSection({ section }) {
   return <section className="content-section resource-section" aria-labelledby={`${section.id}-heading`}>

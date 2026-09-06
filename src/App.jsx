@@ -4,7 +4,7 @@ import LiveSection from "./components/LiveSection";
 import AlwaysOnSection from "./components/AlwaysOnSection";
 import Footer from "./components/Footer";
 import ResourceSection from "./components/ResourceSection";
-import { siteConfig } from "./data/siteConfig";
+import { siteConfig } from "./data/content";
 
 function App() {
   const colorVariables = Object.fromEntries(
@@ -18,9 +18,9 @@ function App() {
     <div className="app-shell" style={colorVariables}>
       <Header site={siteConfig.site} />
       <main className="page-content">
-        {siteConfig.sections.showInfoBanners && <InfoBanner banners={siteConfig.infoBanners} />}
-        {siteConfig.sections.showLiveNow && <LiveSection config={siteConfig.liveSection} channels={siteConfig.liveChannels} buttons={siteConfig.buttons} labels={siteConfig.fallbacks} />}
-        {siteConfig.sections.showAlwaysOn && <AlwaysOnSection config={siteConfig.alwaysOnSection} channels={siteConfig.alwaysOnChannels} buttons={siteConfig.buttons} labels={siteConfig.fallbacks} />}
+        {siteConfig.sections.showInfoBanners && <InfoBanner banners={siteConfig.infoBanners} label={siteConfig.labels.generalInfo} />}
+        {siteConfig.sections.showLiveNow && <LiveSection config={siteConfig.liveSection} channels={siteConfig.liveChannels} buttons={siteConfig.labels} labels={siteConfig.labels} />}
+        {siteConfig.sections.showAlwaysOn && <AlwaysOnSection config={siteConfig.alwaysOnSection} channels={siteConfig.alwaysOnChannels} buttons={siteConfig.labels} labels={siteConfig.labels} />}
         {siteConfig.resourceSections.map((section) => <ResourceSection key={section.id} section={section} />)}
       </main>
       <Footer site={siteConfig.site} />
