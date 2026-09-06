@@ -105,10 +105,10 @@ export const siteConfig = {
       groups: [
         { title: "Resurse", links: [
           { label: "Reluare meci", url: "https://www.footreplays.com/" },
-          { label: "Rezumat meci", url: "https://www.footreplays.com/" },
-          { label: "Arhiva meciuri", url: "https://www.footreplays.com/" },
-          { label: "Posturi românești", url: "https://www.footreplays.com/" },
-          { label: "Posturi străine", url: "https://www.footreplays.com/" },
+          { label: "Rezumat meci", url: "https://hoofoot.com/" },
+          { label: "Arhiva meciuri", url: "https://footballia.net/" },
+          { label: "Posturi românești", url: "https://rds.live/categorie/tv-sport/" },
+          { label: "Posturi străine", url: "https://tvfreedom.surge.sh" },
           { label: "Formula 1", url: "https://rerace.net/" }
         ] }
       ]
