@@ -79,9 +79,11 @@ export const siteConfig = {
   ],
 
   alwaysOnChannels: [
-    { id: "archive", icon: "▣", name: "Archive Room", category: "General", url: "https://example.com/demo/archive-room" },
-    { id: "night", icon: "☾", name: "Night Radio", category: "Ambient", url: "https://example.com/demo/night-radio" },
-    { id: "studio", icon: "✺", name: "Studio Loop", category: "Creativ", url: "https://example.com/demo/studio-loop" }
+    { id: "archive", icon: "▣", name: "SportOnlineG", category: "General", url: "https://sportsonline.st/prog.txt" },
+    { id: "night", icon: "☾", name: "LiveTVSX", category: "Ambient", url: "https://livetv.sx/enx/" },
+    { id: "studio", icon: "✺", name: "VenueVault", category: "Creativ", url: "https://venuevault.live" },
+    { id: "studio", icon: "✺", name: "ReedStreams", category: "Creativ", url: "https://reedstreams.link/" },
+    { id: "studio", icon: "✺", name: "FutbolX", category: "Creativ", url: "https://www.futbol-x.xyz" }
   ],
 
   resourceSections: [
@@ -93,7 +95,7 @@ export const siteConfig = {
         { title: "Windows", links: [
           { label: "PlayTorrio", url: "https://playtorrio.pages.dev/#download" },
           { label: "Ace Player", url: "https://www.acestream.org/?page=products" },
-          { label: "Lista streamuri", url: "#" }
+          { label: "Lista streamuri ACE Player", url: "https://search-ace.stream/" }
         ] }
       ]
     },
@@ -102,12 +104,12 @@ export const siteConfig = {
       title: "Diverse",
       groups: [
         { title: "Resurse", links: [
-          { label: "Reluare meci", url: "#" },
-          { label: "Rezumat meci", url: "#" },
-          { label: "Arhiva meciuri", url: "#" },
-          { label: "Posturi românești", url: "#" },
-          { label: "Posturi străine", url: "#" },
-          { label: "Formula 1", url: "#" }
+          { label: "Reluare meci", url: "https://www.footreplays.com/" },
+          { label: "Rezumat meci", url: "https://www.footreplays.com/" },
+          { label: "Arhiva meciuri", url: "https://www.footreplays.com/" },
+          { label: "Posturi românești", url: "https://www.footreplays.com/" },
+          { label: "Posturi străine", url: "https://www.footreplays.com/" },
+          { label: "Formula 1", url: "https://rerace.net/" }
         ] }
       ]
     }
