@@ -74,8 +74,8 @@ export const siteConfig = {
     { id: "field", icon: "△", name: "Streamest", category: "Documentar", url: "https://v2.streameast.ga/soccer-streams/" },
     { id: "motion", icon: "↗", name: "SuperStrim", category: "Cultură", url: "https://superstrim.pages.dev/sports/football" },
     { id: "coast", icon: "≈", name: "StreamSport99", category: "Relaxare", url: "https://streamsports99.website/" },
-    { id: "signal", icon: "⌁", name: "RosieStream", category: "Tehnologie", url: "https://roxiestreams.info/" }
-    { id: "signal", icon: "⌁", name: "Fantastic Soda", category: "Tehnologie", url: "https://fantasticsoda.com/#/live" }
+    { id: "signal", icon: "⌁", name: "RosieStream", category: "Tehnologie", url: "https://roxiestreams.info/" },
+    { id: "signal", icon: "⌁", name: "Fantastic Soda", category: "Tehnologie", url: "https://fantasticsoda.com/#/live" },
   ],
 
   alwaysOnChannels: [
