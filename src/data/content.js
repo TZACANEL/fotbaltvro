@@ -103,7 +103,7 @@ export const siteConfig = {
       id: "misc",
       title: "Diverse",
       groups: [
-        { title: "Resurse", links: [
+        { title: "", links: [
           { label: "Reluare meci", url: "https://www.footreplays.com/" },
           { label: "Rezumat meci", url: "https://hoofoot.com/" },
           { label: "Arhiva meciuri", url: "https://footballia.net/" },
