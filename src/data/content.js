@@ -69,7 +69,7 @@ export const siteConfig = {
   },
 
   liveChannels: [
-    { id: "arena", icon: "◉", name: "Streamed", category: "Sport", url: "https://streamed.pk/" },
+    { id: "arena", icon: "https://www.google.com/s2/favicons?domain=streamed.pk&sz=64", name: "Streamed", category: "Sport", url: "https://streamed.pk/" },
     { id: "stage", icon: "✦", name: "BuffStreams", category: "Muzică", url: "https://buffsports.io/watch-soccer" },
     { id: "field", icon: "△", name: "Streamest", category: "Documentar", url: "https://v2.streameast.ga/soccer-streams/" },
     { id: "motion", icon: "↗", name: "SuperStrim", category: "Cultură", url: "https://superstrim.pages.dev/sports/football" },
