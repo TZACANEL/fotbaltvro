@@ -10,7 +10,7 @@ export const siteConfig = {
     homeUrl: "#top",
     homeAriaLabelSuffix: "începutul paginii",
     footerYear: 2026,
-    footerText: "Conținut demonstrativ, creat pentru o experiență liniștită și ușor de adaptat."
+    footerText: ""
   },
 
   colors: {
