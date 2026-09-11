@@ -6,20 +6,32 @@ function getChannelIconCandidates(channel) {
     return [channel.icon];
   }
 
+  if (typeof channel.icon === "string" && !/^(https?:\/\/|data:)/i.test(channel.icon)) {
+    return [channel.icon];
+  }
+
   if (isValidUrl(channel.url)) {
     try {
-      const host = new URL(channel.url).hostname.replace(/^www\./i, "");
+      const url = new URL(channel.url);
+      const host = url.hostname.replace(/^www\./i, "");
+      const origin = `${url.protocol}//${url.host}`;
+
       return [
-        `https://${host}/favicon.ico`,
-        `https://icons.duckduckgo.com/ip3/${host}.ico`,
-        `https://www.google.com/s2/favicons?domain=${host}&sz=64`
+        `${origin}/favicon.ico`,
+        `${origin}/favicon.png`,
+        `${origin}/apple-touch-icon.png`,
+        `${origin}/apple-touch-icon-precomposed.png`,
+        `https://www.google.com/s2/favicons?domain_url=${encodeURIComponent(channel.url)}&sz=64`,
+        `https://www.google.com/s2/favicons?domain=${host}&sz=64`,
+        `https://icon.horse/icon/${host}?size=small`,
+        `https://icons.duckduckgo.com/ip3/${host}.ico`
       ];
     } catch {
       // ignore invalid URL parsing and fall through
     }
   }
 
-  return [channel.icon || "⚽"];
+  return [];
 }
 
 function ChannelCard({ channel, buttonLabel, invalidUrlLabel, labels }) {
@@ -28,11 +40,12 @@ function ChannelCard({ channel, buttonLabel, invalidUrlLabel, labels }) {
   const name = channel.name || labels.fallbackChannelName;
   const iconCandidates = getChannelIconCandidates(channel);
   const [iconIndex, setIconIndex] = useState(0);
-  const resolvedIcon = iconIndex < iconCandidates.length ? iconCandidates[iconIndex] : "⚽";
+  const resolvedIcon = iconIndex < iconCandidates.length ? iconCandidates[iconIndex] : null;
   const iconLooksLikeUrl = typeof resolvedIcon === "string" && /^(https?:\/\/|data:)/i.test(resolvedIcon);
+  const isEmojiFallback = typeof channel.icon === "string" && !/^(https?:\/\/|data:)/i.test(channel.icon);
 
   const renderIcon = () => {
-    if (!resolvedIcon) return "⚽";
+    if (resolvedIcon === null) return null;
     if (iconLooksLikeUrl) {
       return <img
         src={resolvedIcon}
@@ -40,7 +53,7 @@ function ChannelCard({ channel, buttonLabel, invalidUrlLabel, labels }) {
         width="16"
         height="16"
         onError={() => {
-          setIconIndex((current) => Math.min(current + 1, iconCandidates.length));
+          setIconIndex((current) => (current + 1 >= iconCandidates.length ? iconCandidates.length : current + 1));
         }}
         style={{ display: "block", width: 16, height: 16, objectFit: "contain", borderRadius: 4 }}
       />;
@@ -50,9 +63,9 @@ function ChannelCard({ channel, buttonLabel, invalidUrlLabel, labels }) {
 
   return <article className="channel-card">
     {enabled ? <a className="channel-button" href={channel.url} target="_blank" rel="noopener noreferrer" aria-label={`${buttonLabel}: ${name}, ${category}`}>
-      <span className="channel-identity"><span className="channel-icon" aria-hidden="true">{renderIcon()}</span><span className="channel-name">{name}</span><span className="sr-only"> — {category}</span></span>
+      <span className="channel-identity">{renderIcon() ? <span className="channel-icon" aria-hidden="true">{renderIcon()}</span> : null}<span className="channel-name">{name}</span><span className="sr-only"> — {category}</span></span>
       <span className="channel-arrow" aria-hidden="true">↗</span>
-    </a> : <span className="channel-button channel-button--disabled" aria-disabled="true"><span className="channel-identity"><span className="channel-icon" aria-hidden="true">{renderIcon()}</span><span className="channel-name">{name}</span></span><span>{invalidUrlLabel}</span></span>}
+    </a> : <span className="channel-button channel-button--disabled" aria-disabled="true"><span className="channel-identity">{renderIcon() ? <span className="channel-icon" aria-hidden="true">{renderIcon()}</span> : null}<span className="channel-name">{name}</span></span><span>{invalidUrlLabel}</span></span>}
   </article>;
 }
 
