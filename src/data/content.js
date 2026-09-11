@@ -45,10 +45,10 @@ export const siteConfig = {
       eyebrow: "BUN VENIT",
       title: "PENTRU BLOCAREA RECLAMELOR RECOMAND",
       links: [
-        { category: "DESKTOP", label: "UBLOCK ORIGIN LITE", url: "https://chromewebstore.google.com/detail/ublock-origin-lite/ddkjiahejlhfcafbddmgiahcphecmpfh" },
-        { category: "MOBIL", label: "BROWSER BRAVE", url: "https://play.google.com/store/apps/details?id=com.brave.browser" },
-        { category: "ANDROID TV", label: "BROWSER HERE", url: "https://play.google.com/store/apps/details?id=com.tcl.browser" },
-        { label: "BROWSER APP", url: "https://play.google.com/store/apps/details?id=com.internet.tvbrowser" }
+        { category: "DESKTOP", label: "UBLOCK ORIGIN LITE", icon: "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/ublockorigin.svg", url: "https://chromewebstore.google.com/detail/ublock-origin-lite/ddkjiahejlhfcafbddmgiahcphecmpfh" },
+        { category: "MOBIL", label: "BROWSER BRAVE", icon: "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/brave.svg", url: "https://play.google.com/store/apps/details?id=com.brave.browser" },
+        { category: "ANDROID TV", label: "BROWSER HERE", icon: "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/chromium.svg", url: "https://play.google.com/store/apps/details?id=com.tcl.browser" },
+        { label: "BROWSER APP", icon: "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/chromium.svg", url: "https://play.google.com/store/apps/details?id=com.internet.tvbrowser" }
       ]
     }
   ],

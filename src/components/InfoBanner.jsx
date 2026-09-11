@@ -7,7 +7,11 @@ function InfoBanner({ banners, label }) {
         {banner.links.map((link) => <span className="source-link-wrap" key={link.label}>
           {link.prefix && <span className="source-prefix">{link.prefix}</span>}
           {link.category && <span className="source-category">{link.category}</span>}
-          <a href={link.url} target="_blank" rel="noopener noreferrer">{link.label}<span aria-hidden="true">↗</span></a>
+          <a href={link.url} target="_blank" rel="noopener noreferrer">
+            {link.icon ? <img className="source-link-icon" src={link.icon} alt="" width="16" height="16" /> : null}
+            <span>{link.label}</span>
+            <span aria-hidden="true">↗</span>
+          </a>
         </span>)}
       </nav> : banner.text && <p>{banner.text}</p>}
     </article>)}
