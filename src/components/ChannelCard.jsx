@@ -1,23 +1,41 @@
 import { isValidUrl } from "../utils/url";
 
+function getChannelIcon(channel) {
+  if (typeof channel.icon === "string" && /^(https?:\/\/|data:)/i.test(channel.icon)) {
+    return channel.icon;
+  }
+
+  if (isValidUrl(channel.url)) {
+    try {
+      const host = new URL(channel.url).hostname.replace(/^www\./i, "");
+      return `https://www.google.com/s2/favicons?domain=${host}&sz=64`;
+    } catch {
+      // ignore invalid URL parsing and fall through
+    }
+  }
+
+  return channel.icon || "◌";
+}
+
 function ChannelCard({ channel, buttonLabel, invalidUrlLabel, labels }) {
   const enabled = isValidUrl(channel.url);
   const category = channel.category || labels.fallbackCategory;
   const name = channel.name || labels.fallbackChannelName;
-  const iconLooksLikeUrl = typeof channel.icon === "string" && /^(https?:\/\/|data:)/i.test(channel.icon);
+  const icon = getChannelIcon(channel);
+  const iconLooksLikeUrl = typeof icon === "string" && /^(https?:\/\/|data:)/i.test(icon);
 
   const renderIcon = () => {
-    if (!channel.icon) return "◌";
+    if (!icon) return "◌";
     if (iconLooksLikeUrl) {
       return <img
-        src={channel.icon}
+        src={icon}
         alt=""
         width="16"
         height="16"
         style={{ display: "block", width: 16, height: 16, objectFit: "contain", borderRadius: 4 }}
       />;
     }
-    return channel.icon;
+    return icon;
   };
 
   return <article className="channel-card">
