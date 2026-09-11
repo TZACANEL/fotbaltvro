@@ -46,9 +46,9 @@ export const siteConfig = {
       title: "PENTRU BLOCAREA RECLAMELOR RECOMAND",
       links: [
         { category: "DESKTOP", label: "UBLOCK ORIGIN LITE", icon: "https://raw.githubusercontent.com/gorhill/uBlock/master/src/img/ublock.svg", url: "https://chromewebstore.google.com/detail/ublock-origin-lite/ddkjiahejlhfcafbddmgiahcphecmpfh" },
-        { category: "MOBIL", label: "BROWSER BRAVE", icon: "https://brave.com/static-assets/images/brave-logo.svg", url: "https://play.google.com/store/apps/details?id=com.brave.browser" },
+        { category: "MOBIL", label: "BROWSER BRAVE", icon: "https://upload.wikimedia.org/wikipedia/commons/5/51/Brave_icon_lionface.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original", url: "https://play.google.com/store/apps/details?id=com.brave.browser" },
         { category: "ANDROID TV", label: "BROWSER HERE", icon: "https://browsehere.net/favicon.svg", url: "https://play.google.com/store/apps/details?id=com.tcl.browser" },
-        { label: "BROWSER APP", icon: "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/chromium.svg", url: "https://play.google.com/store/apps/details?id=com.internet.tvbrowser" }
+        { label: "BROWSER APP", icon: "https://play-lh.googleusercontent.com/nOtiyjVc4iZH-vVunOsxnqaavudpjE8zQL69BIn5Hn4eAdUhsYpIfGk-K4pbgX1q_D3llTs7H7XrZsDvgxLUbg=w240-h480-rw", url: "https://play.google.com/store/apps/details?id=com.internet.tvbrowser" }
       ]
     }
   ],
