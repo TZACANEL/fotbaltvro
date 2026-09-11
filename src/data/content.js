@@ -69,21 +69,21 @@ export const siteConfig = {
   },
 
   liveChannels: [
-    { id: "arena", name: "Streamed", category: "Sport", url: "https://streamed.pk/" },
-    { id: "stage", icon: "✦", name: "BuffStreams", category: "Muzică", url: "https://buffsports.io/watch-soccer" },
-    { id: "field", icon: "△", name: "Streamest", category: "Documentar", url: "https://v2.streameast.ga/soccer-streams/" },
-    { id: "motion", icon: "↗", name: "SuperStrim", category: "Cultură", url: "https://superstrim.pages.dev/sports/football" },
-    { id: "coast", icon: "≈", name: "StreamSport99", category: "Relaxare", url: "https://streamsports99.website/" },
-    { id: "signal", icon: "⌁", name: "RosieStream", category: "Tehnologie", url: "https://roxiestreams.info/" },
-    { id: "fantastic-soda", icon: "⌁", name: "Fantastic Soda", category: "Tehnologie", url: "https://fantasticsoda.com/#/live" },
+    { name: "Streamed", url: "https://streamed.pk/" },
+    { name: "BuffStreams", url: "https://buffsports.io/watch-soccer" },
+    { name: "Streamest", url: "https://v2.streameast.ga/soccer-streams/" },
+    { name: "SuperStrim", url: "https://superstrim.pages.dev/sports/football" },
+    { name: "StreamSport99", url: "https://streamsports99.website/" },
+    { name: "RosieStream", url: "https://roxiestreams.info/" },
+    { name: "Fantastic Soda", url: "https://fantasticsoda.com/#/live" },
   ],
 
   alwaysOnChannels: [
-    { id: "archive", icon: "▣", name: "SportOnlineG", category: "General", url: "https://sportsonline.st/prog.txt" },
-    { id: "night", icon: "☾", name: "LiveTVSX", category: "Ambient", url: "https://livetv.sx/enx/" },
-    { id: "studio", icon: "✺", name: "VenueVault", category: "Creativ", url: "https://venuevault.live" },
-    { id: "studio", icon: "✺", name: "ReedStreams", category: "Creativ", url: "https://reedstreams.link/" },
-    { id: "studio", icon: "✺", name: "FutbolX", category: "Creativ", url: "https://www.futbol-x.xyz" }
+    { name: "SportOnlineG", url: "https://sportsonline.st/prog.txt" },
+    { name: "LiveTVSX", url: "https://livetv.sx/enx/" },
+    { name: "VenueVault", url: "https://venuevault.live" },
+    { name: "ReedStreams", url: "https://reedstreams.link/" },
+    { name: "FutbolX", url: "https://www.futbol-x.xyz" }
   ],
 
   resourceSections: [
@@ -91,8 +91,8 @@ export const siteConfig = {
       id: "platforms",
       title: "Alte platforme",
       groups: [
-        { title: "Android TV", links: [{ label: "PlayTorrio (4054777)", url: "https://playtorrio.pages.dev/#download" }] },
-        { title: "Windows", links: [
+        { title: "Android TV", icon: "https://cdn-icons-png.flaticon.com/512/174/174836.png", links: [{ label: "PlayTorrio (4054777)", url: "https://playtorrio.pages.dev/#download" }] },
+        { title: "Windows", icon: "https://cdn-icons-png.flaticon.com/512/220/220215.png", links: [
           { label: "PlayTorrio", url: "https://playtorrio.pages.dev/#download" },
           { label: "Ace Player", url: "https://www.acestream.org/?page=products" },
           { label: "Lista streamuri ACE Player", url: "https://search-ace.stream/" }

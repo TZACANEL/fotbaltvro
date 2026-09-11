@@ -5,7 +5,10 @@ function ResourceSection({ section }) {
     <h2 id={`${section.id}-heading`}>{section.title}</h2>
     <div className="resource-groups">
       {section.groups.map((group) => <div className="resource-group" key={group.title}>
-        <span className="resource-group-title">{group.title}</span>
+        <span className="resource-group-title">
+          {group.icon ? <img src={group.icon} alt="" width="16" height="16" style={{ display: "block", width: 16, height: 16, objectFit: "contain", borderRadius: 4 }} /> : null}
+          {group.title}
+        </span>
         <div className="resource-buttons">
           {group.links.map((link) => isValidUrl(link.url)
             ? <a key={link.label} href={link.url} target="_blank" rel="noopener noreferrer">{link.label}<span aria-hidden="true">↗</span></a>
