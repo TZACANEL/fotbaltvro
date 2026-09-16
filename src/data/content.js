@@ -56,7 +56,6 @@ export const siteConfig = {
   liveSection: {
     title: "Recomandate",
     intro: "",
-    displayedSourceCount: 7,
     sourceCountLabel: "surse",
     emptyMessage: "Momentan nu sunt surse de afișat. Revino puțin mai târziu."
   },
@@ -98,7 +97,7 @@ export const siteConfig = {
           { label: "Ace Player", url: "https://www.acestream.org/?page=products" },
           { label: "Lista streamuri ACE Player", url: "https://search-ace.stream/" }
         ] },
-        { title: "Linux", icon: "https://cdn-icons-png.flaticon.com/512/518/518713.png", links: [      
+        { title: "Linux", icon: "https://cdn-icons-png.flaticon.com/512/6124/6124995.png", links: [      
           { label: "PlayTorrio", url: "https://playtorrio.pages.dev/#download" },
           { label: "Ace Player", url: "https://docs.acestream.net/products/#linux" },
           { label: "Lista streamuri ACE Player", url: "https://search-ace.stream/" }
