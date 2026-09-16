@@ -76,6 +76,7 @@ export const siteConfig = {
     { name: "RosieStream", url: "https://roxiestreams.info/" },
     { name: "Fantastic Soda", url: "https://fantasticsoda.com/#/live" },
     { name: "Streamit", url: "https://streamit.st/sports/soccer" },
+    { name: "NTV", url: "https://ntv.st" },
   ],
 
   alwaysOnChannels: [
@@ -83,7 +84,8 @@ export const siteConfig = {
     { name: "LiveTVSX", url: "https://livetv.sx/enx/" },
     { name: "VenueVault", url: "https://venuevault.live" },
     { name: "ReedStreams", url: "https://reedstreams.link/" },
-    { name: "FutbolX", url: "https://www.futbol-x.xyz" }
+    { name: "FutbolX", url: "https://www.futbol-x.xyz" },
+    { name: "Zlive", url: "https://zlive.st/streams" }
   ],
 
   resourceSections: [
