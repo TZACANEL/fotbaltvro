@@ -76,6 +76,7 @@ export const siteConfig = {
     { name: "StreamSport99", url: "https://streamsports99.website/" },
     { name: "RosieStream", url: "https://roxiestreams.info/" },
     { name: "Fantastic Soda", url: "https://fantasticsoda.com/#/live" },
+    { name: "Streamit", url: "https://streamit.st/sports/soccer" },
   ],
 
   alwaysOnChannels: [
@@ -96,7 +97,15 @@ export const siteConfig = {
           { label: "PlayTorrio", url: "https://playtorrio.pages.dev/#download" },
           { label: "Ace Player", url: "https://www.acestream.org/?page=products" },
           { label: "Lista streamuri ACE Player", url: "https://search-ace.stream/" }
-        ] }
+        ] },
+        { title: "Linux", icon: "https://cdn-icons-png.flaticon.com/512/518/518713.png", links: [      
+          { label: "PlayTorrio", url: "https://playtorrio.pages.dev/#download" },
+          { label: "Ace Player", url: "https://docs.acestream.net/products/#linux" },
+          { label: "Lista streamuri ACE Player", url: "https://search-ace.stream/" }
+        ] },
+        { title: "macOS", icon: "https://cdn-icons-png.flaticon.com/512/0/747.png", links: [      
+          { label: "PlayTorrio", url: "https://playtorrio.pages.dev/#download" },
+        ] },
       ]
     },
     {
