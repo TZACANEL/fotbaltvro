@@ -71,12 +71,13 @@ export const siteConfig = {
     { name: "Streamed", url: "https://streamed.pk/" },
     { name: "BuffStreams", url: "https://buffsports.io/watch-soccer" },
     { name: "Streamest", url: "https://v2.streameast.ga/soccer-streams/" },
-    { name: "SuperStrim", url: "https://superstrim.pages.dev/sports/football" },
+    { name: "StreamFree", url: "https://streamfree.top/" },
     { name: "StreamSport99", url: "https://streamsports99.website/" },
-    { name: "RosieStream", url: "https://roxiestreams.info/" },
+    { name: "RosieStream", url: "https://roxiestreams.biz" },
     { name: "Fantastic Soda", url: "https://fantasticsoda.com/#/live" },
     { name: "Streamit", url: "https://streamit.st/sports/soccer" },
     { name: "NTV", url: "https://ntv.st" },
+    { name: "DaddyLive", url: "https://dlive.sx" }
   ],
 
   alwaysOnChannels: [
@@ -84,8 +85,9 @@ export const siteConfig = {
     { name: "LiveTVSX", url: "https://livetv.sx/enx/" },
     { name: "VenueVault", url: "https://venuevault.live" },
     { name: "ReedStreams", url: "https://reedstreams.link/" },
-    { name: "FutbolX", url: "https://www.futbol-x.xyz" },
-    { name: "Zlive", url: "https://zlive.st/streams" }
+    { name: "Zlive", url: "https://zlive.st/streams" },
+    { name: "Streamcorner", url: "https://streamcorner.st" },
+    { name: "WatchSportSU", url: "https://watchsports.su/" }
   ],
 
   resourceSections: [
@@ -119,7 +121,8 @@ export const siteConfig = {
           { label: "Arhiva meciuri", url: "https://footballia.net/" },
           { label: "Posturi românești", url: "https://rds.live/categorie/tv-sport/" },
           { label: "Posturi străine", url: "https://tvfreedom.surge.sh" },
-          { label: "Formula 1", url: "https://rerace.net/" }
+          { label: "Formula 1", url: "https://flive.dpdns.org" },
+          { label: "PayPerView", url: "https://ppv.st/" }
         ] }
       ]
     }
